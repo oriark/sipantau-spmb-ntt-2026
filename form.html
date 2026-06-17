@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Input Pengawasan
+</title>
+
+
+<link href="css/style.css"
+rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h2>
+Input Pengawasan SPMB
+</h2>
+
+
+
+<select id="kategori"
+onchange="loadQuestion()">
+
+
+<option>
+Pilih Sasaran
+</option>
+
+
+<option value="SEKOLAH">
+Satuan Pendidikan
+</option>
+
+
+<option value="DINAS">
+Dinas Pendidikan
+</option>
+
+
+<option value="ORANG_TUA">
+Orang Tua
+</option>
+
+
+</select>
+
+
+
+<select id="wilayah">
+
+<option>
+Pilih Kabupaten/Kota
+</option>
+
+
+</select>
+
+
+
+<input id="instansi"
+placeholder="Nama Instansi">
+
+
+<hr>
+
+
+<div id="pertanyaan">
+
+</div>
+
+
+
+<input type="file"
+id="eviden">
+
+
+<button onclick="submitForm()">
+
+SIMPAN DATA
+
+</button>
+
+
+</div>
+
+
+
+<script src="js/config.js"></script>
+
+<script src="js/form.js"></script>
+
+<script src="js/upload.js"></script>
+
+
+</body>
+
+</html>
